@@ -1,0 +1,30 @@
+.wrap {}
+.wrap .page1 {}
+.wrap .page1 title {}
+.wrap .page1 title h1 {}
+.wrap .page1 p {}
+.wrap .page1 ul {}
+.wrap .page1 ul li {}
+.wrap .page2 {}
+.wrap .page2 .big_left {}
+.wrap .page2 .big_left ul {}
+.wrap .page2 .big_left ul li {}
+.wrap .page2 .big_left ul li h2 {}
+.wrap .page2 .big_left ul li img {}
+.wrap .page2 .top_comment {}
+.wrap .page2 .top_comment h2 {}
+.wrap .page2 .bottom {}
+.wrap .page2 .bottom .left {}
+.wrap .page2 .bottom .left .education,
+.wrap .page2 .bottom .left .experience,
+.wrap .page2 .bottom .left .licenses {}
+.wrap .page2 .bottom .left .education li,
+.wrap .page2 .bottom .left .experience li,
+.wrap .page2 .bottom .left .licenses li {}
+.wrap .page2 .bottom .left .education li h3,
+.wrap .page2 .bottom .left .experience li h3,
+.wrap .page2 .bottom .left .licenses li h3 {}
+.wrap .page2 .bottom .left .education li h3 em,
+.wrap .page2 .bottom .left .experience li h3 em,
+.wrap .page2 .bottom .left .licenses li h3 em {}
+
