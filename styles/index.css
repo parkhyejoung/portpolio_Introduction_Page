@@ -145,8 +145,16 @@
     font-size: 1rem;
 }
 .wrap .project {}
-.wrap .project .project_wrap {}
-.wrap .project .project_wrap .Web_design {}
+.wrap .project .project_wrap {
+    width: 100vw;
+    height: 100vh;
+}
+.wrap .web_design h3 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 50px 0;
+}
 .wrap .project .project_wrap .Web_design .card {}
 .wrap .project .banner {}
 .wrap .project .banner .swiper-wrapper {}
