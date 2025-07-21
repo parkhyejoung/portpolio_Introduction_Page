@@ -141,12 +141,18 @@
 .wrap .page2 .bottom .rigth .tool li span {
     font-size: 1rem;
 }
-.wrap .project {}
-.wrap .project .project_wrap {
+/* .wrap .project .project_wrap {
     width: 100vw;
     height: 100vh;
+} */
+.wrap .project_web_design .project_wrap {
 }
-.wrap .web_design h3 {
+.wrap .project_web_design .project_wrap .web_design img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+.wrap .project_web_design h3 {
     font-size: 3rem;
     text-align: center;
     font-weight: 600;
