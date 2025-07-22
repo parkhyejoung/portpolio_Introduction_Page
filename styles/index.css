@@ -146,10 +146,13 @@
 }
 .wrap .project_web_design h3 {
     font-size: 2rem;
+    font-weight: 600;
     text-align: center;
 }
 .wrap .project_web_design .project_wrap_top {
     display: flex;
+    justify-content: center;
+    gap: 50px;
     padding-top: 20px;
 }
 .wrap .project_web_design .project_wrap_top .card {}
@@ -176,9 +179,9 @@
     font-weight: 600;
 }
 .wrap .project_web_design .project_wrap_top .card .deco .card_txt .t2 {
-        font-size: 2rem;
-        font-weight: 600;
-        color: #acacac;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #acacac;
 }
 .wrap .project_web_design .project_wrap_top .card .deco .li {
 }
@@ -201,6 +204,8 @@
 
 .wrap .project_web_design .project_wrap_bottom {
     display: flex;
+    justify-content: center;
+    gap: 50px;
     padding-top: 20px;
 }
 .wrap .project_web_design .project_wrap_bottom .card {}
