@@ -3,200 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOIO 2025</title>
+    <title>2025 박혜정 포트폴리오</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- 웹 연결 -->
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <script src="./scripts/index.js" defer ></script>
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/scroll.js" defer></script>
 </head>
 <body>
-    <div class="wrap">
-        <section class="page1">
-            <div class="title">
-                <h1>PORTFOIO 2025</h1>
-            </div>
-            <p>@PARK HYE JOUNG</p>
-            <ul>
-                <li><span>Web designer</span></li>
-                <li><span>UX/UI designer</span></li>
-                <li><span>Publisher</span></li>
-            </ul>
-        </section>
-        <section class="page2">
-            <div class="big_left">
-                <div class="me">
-                    <img class="pic" src="./images/r4.png" alt="">
-                    <div class="line">
-                        <p><h2>ABOUT</h2></p>
-                        <p>박혜정</p>
-                        <p>1996.03.08</p>
-                        <p>인천광역시 연수구</p>
-                        <p>qkrgpwjd1996@gmail.com</p>
-                        <p>010-3573-7817</p>
-                    </div>  
-                    <p><img class="search" src="./images/page0102/search.png" alt="#"></p>
+    <header>
+        <nav>
+            <a href="#"><span>Intro</span></a>
+            <a href="#"><span>Profile</span></a>
+            <a href="#"><span>webDesign</span></a>
+            <a href="#"><span>Project</span></a>
+            <a href="#"><span>Contact</span></a>
+        </nav>
+    </header>
+    <div class="swiper" id="wrap">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide intro">
+                <div class="blue">
+                    <h1>PORTFOIO 2025</h1>
+                </div>
+                <h2>@PARK HYE JOUNG</h2>
+                <div class="btn">
+                    <span>Web designer</span>
+                    <span>UX/UI designer</span>
+                    <span>Publisher</span>
                 </div>
             </div>
-            <div class="rignt_wrap">
-                <div class="top_comment">
-                    <h2>‘사용자의 시선과 마음을 사로잡는 성장하는 디자이너 박혜정입니다”</h2>
-                </div>
-                <div class="bottom">
-                    <div class="left">
-                        <ul class="education">
-                            <li><h3>Education</h3></li>
-                            <li><em>2015.02</em> 경인여자대학교 호텔카지노과 졸업 </li>
-                            <li><em>2025.08</em> UI/UX 프론트엔드 반응형<br>웹디자인&웹퍼블리셔 수료</li>
-                        </ul>
-                        <ul class="experience">
-                            <li><h3>Experience</h3></li>
-                            <li><em>2019.07 ~ 2024.08</em> 메타넷엠플랫폼</li>
-                            <li><em>2017.12 ~ 2018.05</em> 네이쳐리퍼블릭</li>
-                            <li><em>2016.07 ~ 2017.03</em> 해테제과 빨라쪼 아이스크림</li>
-                            <li><em>2014.09 ~ 2016.08</em> 이랜드외식사업부 애슐리</li>
-                        </ul>
-                        <ul class="licenses">
-                            <li><h3>Licenses</h3></li>
-                            <li><em>2019.03</em> 컴퓨터활용능력2급</li>
-                            <li><em>2019.03</em> 워드프로세서 1급</li>
-                            <li><em>2015.11</em> 식품가공기능사</li>
+            <div class="swiper-slide profile">
+                <div class="container">
+                    <div class="photo_info">
+                        <img src="./images/r4.png" alt="">
+                        <ul class="info">
+                            <li><span class="i_title">ABOUT</span></li>
+                            <li>박혜정</li>
+                            <li>1996.03.08</li>
+                            <li>인천광역시 연수구</li>
+                            <li>qkrgpwjd1996@gmail.com</li>
+                            <li>010-3573-7817</li>
+                            <li>
+                                <a href="https://github.com/dashboard" target="_blank">깃허브 바로가기</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="rigth">
-                        <h3>Tool</h3>
-                        <ul class="tool">
-                            <li><img src="./images/page0102/t001.png" alt="일러스트레이터"><span>웹페이지, UIUX 디자인 및 시네마 그래프 제작</span></li>
-                            <li><img src="./images/page0102/t002.png" alt="포토샵"><span>배너,광고 디자인,sns광고 가능 </span></li>
-                            <li><img src="./images/page0102/t003.png" alt="HTML"><span>한국형 웹 접근성 지침(KWCAG)을 준수한 웹표준 마크업</span></li>
-                            <li><img src="./images/page0102/t004.png" alt="CSS"><span>CSS 3.0 Flex 및 Grid 레이아웃 기반의 반응형 웹사이트 개발</span></li>
-                            <li><img src="./images/page0102/t005.png" alt="자바스크립트"><span>ES6기반 인터랙션 개발(slide, navigation, GSAP라이브러리 활용)</span></li>
-                            <li><img src="./images/page0102/t006.png" alt="제이쿼리"><span>라이브러리를 활용한 인터렉션 UI 개발</span></li>
-                            <li><img src="./images/page0102/t007.png" alt="피그마"><span>모바일 UIUX 디자인 및 프로토타입 개발</span></li>
-                            <li><img src="./images/page0102/t008.png" alt="깃허브"><span>팀원들과 원활하게 협업하며, 효율적인 코드 관리와 버전 컨트롤 실천</span></li>
-                            <li><img src="./images/page0102/t009.png" alt="리액트"><span>React를 활용해 동적이고 직관적인 사용자 인터페이스를 구현</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="project_web_design">
-            <h3>Web Design Project</h3>
-            <div class="project_wrap_top">
-                <div class="card">
-                    <div class="deco">
-                        <div class="bg">
-                            <ul class="card_txt">
-                                <li class="t1">01</li>
-                                <li class="t2">MARKET B</li>
-                                <li>리디자인</li>
-                                <li>적응형 웹 </li>
-                                <li>기여도: 100%</li>
-                            </ul>
-                            <div class="link">
-                                <a href="https://www.figma.com/design/ZUHfn7ac1VWzMFVZNpGXW0/%EB%B0%95%ED%98%9C%EC%A0%95-%EC%95%88%EC%83%81%EA%B7%9C%EB%B2%8C%EA%BF%80-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=35-75&t=nb6OuBpao9fzxV0Q-0" target="_blank"><span>피그마보기</span></a>
-                                <a href="https://parkhyejoung.github.io/project_ahnsang_gyu_honey/" target="_blank"><span>프로토타입</span></a>
+                    <div class="resume">
+                        <div class="re_zone">
+                            <div class="top_co">
+                                <h2>‘사용자의 시선과 마음을 사로잡는 성장하는 디자이너 박혜정입니다”</h2>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="deco">
-                        <div class="bg2">
-                            <ul class="card_txt">
-                                <li class="t1">02</li>
-                                <li class="t2">안상규벌꿀</li>
-                                <li>리디자인</li>
-                                <li>적응형 웹 </li>
-                                <li>기여도: 100%</li>
-                            </ul>
-                            <div class="link">
-                                <a href="https://www.figma.com/design/ZUHfn7ac1VWzMFVZNpGXW0/%EB%B0%95%ED%98%9C%EC%A0%95-%EC%95%88%EC%83%81%EA%B7%9C%EB%B2%8C%EA%BF%80-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=35-75&t=cEDcauB04RYpjb3W-0" target="_blank"><span>피그마보기</span></a>
-                                <a href="https://parkhyejoung.github.io/project_ahnsang_gyu_honey/" target="_blank"><span>프로토타입</span></a>
+                            <div class="re_wrap">
+                                <div class="top">
+                                    <ul class="education">
+                                        <li><p class="title">Education</p></li>
+                                        <li><span>2025-08<em class="b_font"> 프론트엔트 UIUX 반응형 웹디자인&웹퍼블리셔 양성과정 수료(예정)</em></span></li>
+                                        <li><span>2015.02<em class="b_font"> 경인여자대학교 호텔카지노과 졸업</em></span></li>
+                                    </ul>
+                                    <ul class="experience">
+                                        <li><p class="title">Experience</p></li>
+                                        <li><span>2019.07 ~ 2024.08<em class="b_font"> 메타넷엠플랫폼</em></span></li>
+                                        <li><span>2017.12 ~ 2018.05<em class="b_font"> 네이쳐리퍼블릭</em></span></li>
+                                        <li><span>2016.07 ~ 2017.03<em class="b_font"> 해테제과 빨라쪼 아이스크림</em></span></li>
+                                        <li><span>2014.09 ~ 2016.08<em class="b_font"> 이랜드외식사업부 애슐리</em></span></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <ul class="licenses">
+                                        <li><p class="title">Licenses</p></li>
+                                        <li><span>2019.03<em> 컴퓨터활용능력2급</em></span></li>
+                                        <li><span>2019.03<em> 워드프로세서 1급</em></span></li>
+                                        <li><span>2015.11<em> 식품가공기능사</em></span></li>
+                                    </ul>
+                                    <ul class="skill">
+                                        <li><p class="title">Skill<p></li>
+                                        <li><img src="./images/icon/ai.png" alt="일러스트레이터"><em> 웹페이지, UIUX 디자인 및 로고, 명함 디자인 가능 </em></li> 
+                                        <li><img src="./images/icon/ps.png" alt="포토샵"><em> 배너, 광고 디자인 ,sns 광고 가능</em></li> 
+                                        <li><img src="./images/icon/figma.png" alt="피그마"><em> Figma를 활용한 UI/UX 디자인 및 웹페이지 레이아웃 디자인 가능</em></li> 
+                                        <li><img src="./images/icon/html.png" alt="HTML"><em> 웹표준&웹접근성에 맞게 최신 코드를 다룰 수 있다.</em></li> 
+                                        <li><img src="./images/icon/js.png" alt="자바스크립트"><em> 로그인 유효성 검사 및 무한 스크롤 , 슬라이드 , 메뉴 등 다양한 웹에 들어가는 동적인 기능을 할 수 있다 , 자바스크립트 기초를 이해하고 팀 협업에 도움이 될 수 있다.</em></li> 
+                                        <li><img src="./images/icon/jq.png" alt="제이쿼리"><em> DOM요소에 들어가는 빠른 동적 애니메이션을 만들 수 있다.</em></li> 
+                                        <li><img src="./images/icon/react.png" alt="리액트"><em> state , Props 등 다양한 훅을 이용해서 웹/앱을 개발할수있다.</em></li> 
+                                        <li><img src="./images/icon/git.png" alt="깃허브"><em> git 명령을 이용해 github로 개인작업과 원활한 팀협업을 할 수 있다.</em></li> 
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="project_wrap_bottom">
-                <div class="card">
-                    <div class="deco">
-                        <div class="bg3">
-                            <ul class="card_txt">
-                                <li class="t1">03</li>
-                                <li class="t2">쇼핑몰 ABLY</li>
-                                <li>리디자인</li>
-                                <li>적응형 웹 </li>
-                                <li>기여도: 100%</li>
-                            </ul>
-                            <div class="link">
-                                <a href="https://www.figma.com/design/GmLxG0qq6VLl57GAjZ6Lm3/박혜정-에이블리-리디자인?node-id=196-88&p=f&t=XQPu5Fs3ZS1rpac8-0" target="_blank"><span>피그마보기</span></a>
-                                <a href="https://parkhyejoung.github.io/ably/" target="_blank"><span>프로토타입</span></a>
+            <div class="swiper-slide project">
+                <div class="container">
+                    <div class="swiper" id="project_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <div class="thumnail">
+                                    <img src="./images/nn.jpg" alt="에이블리 목업 이미지">
+                                    <ul class="contents">
+                                        <li>프로젝트1. 안상규벌꿀</li>
+                                        <li>2025.07.(28시간)</li>
+                                        <li>사용 프로그램</li>
+                                        <li>figma, photoshop , html , css , javascript</li>
+                                        <li>적응형(1920-800-600-320)</li> 
+                                        <li>제작페이지 : index, 장바구니, 상품상세</li>
+                                        <li>
+                                            <a href="https://parkhyejoung.github.io/project_ahnsang_gyu_honey/" target="_blank">프로토타입(github)</a>
+                                            <a href="#" target="_blank">기획서</a><!-- 스타일가이드,와이어프레임 -->
+                                            <a href="https://www.figma.com/design/nR6gblVYPHHoXgMzHSiU9a/%EB%B0%95%ED%98%9C%EC%A0%95-%EB%8B%A4%EC%84%B1?node-id=1-2&t=xJKcOZvDJeueXg1T-1" target="_blank">피그마 프로토타입 보기</a>
+                                            <a href="https://beeman.co.kr/" target="_blank">원본 사이트 보기</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <div class="thumnail">
+                                    <img src="./images/nn.jpg" alt="마켓비 목업 이미지">
+                                    <ul class="contents">
+                                        <li>프로젝트2. 마켓비</li>
+                                        <li>2025.07.(30시간)</li>
+                                        <li>사용 프로그램</li>
+                                        <li>figma, photoshop , html , css , javascript</li>
+                                        <li>반응형(1920)</li> 
+                                        <li>제작페이지 : index</li>
+                                        <li>
+                                            <a href="https://parkhyejoung.github.io/project_market_b/" target="_blank">프로토타입(github)</a>
+                                            <a href="#" target="_blank">기획서</a><!-- 스타일가이드,와이어프레임 -->
+                                            <a href="https://www.figma.com/design/7zu76hzZKacScTZNyoDxUg/%EB%B0%95%ED%98%9C%EC%A0%95---%EB%A7%88%EC%BC%93%EB%B9%84-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0-1&p=f&t=paa9Kz8cf91hzm2J-0" target="_blank">피그마 프로토타입 보기</a>
+                                            <a href="https://marketb.kr/?srsltid=AfmBOoomdYX28DoSBQsD5RpCFsZVE7XfoYbqshy0IE8_naUzm0hG2sRJ/" target="_blank">원본 사이트 보기</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <div class="thumnail">
+                                    <img src="./images/nn.jpg" alt="다성 목업 이미지">
+                                    <ul class="contents">
+                                        <li>프로젝트3. 주식회사 다성</li>
+                                        <li>2025.07.(20시간)</li>
+                                        <li>사용 프로그램</li>
+                                        <li>figma, photoshop , html , css , javascript</li>
+                                        <li>반응형(1920)</li> 
+                                        <li>제작페이지 : index</li>
+                                        <li>
+                                            <a href="https://parkhyejoung.github.io/project_dasuong/" target="_blank">프로토타입(github)</a>
+                                            <a href="#" target="_blank">기획서</a><!-- 스타일가이드,와이어프레임 -->
+                                            <a href="https://www.figma.com/design/nR6gblVYPHHoXgMzHSiU9a/%EB%B0%95%ED%98%9C%EC%A0%95-%EB%8B%A4%EC%84%B1?node-id=0-1&p=f&t=TIXA7tYzvPvqjnex-0" target="_blank">피그마 프로토타입 보기</a>
+                                            <a href="http://www.dasuong.com/" target="_blank">원본 사이트 보기</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide4">
+                                <div class="thumnail">
+                                    <img src="./images/nn.jpg" alt="에이블리 목업 이미지">
+                                    <ul class="contents">
+                                        <li>프로젝트4. 에이블리</li>
+                                        <li>2025.07.(28시간)</li>
+                                        <li>사용 프로그램</li>
+                                        <li>figma, photoshop , html , css , javascript</li>
+                                        <li>반응형(1920)</li> 
+                                        <li>제작페이지 : index</li>
+                                        <li>
+                                            <a href="https://parkhyejoung.github.io/project_dasuong/" target="_blank">프로토타입(github)</a>
+                                            <a href="#" target="_blank">기획서</a><!-- 스타일가이드,와이어프레임 -->
+                                            <a href="https://www.figma.com/design/GmLxG0qq6VLl57GAjZ6Lm3/%EB%B0%95%ED%98%9C%EC%A0%95-%EC%97%90%EC%9D%B4%EB%B8%94%EB%A6%AC-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=196-88&p=f&t=XQPu5Fs3ZS1rpac8-0">피그마 프로토타입 보기</a>
+                                            <a href="https://parkhyejoung.github.io/ably/" target="_blank">원본 사이트 보기</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="deco">
-                        <div class="bg4">
-                            <ul class="card_txt">
-                                <li class="t1">04</li>
-                                <li class="t2">주식회사 다성</li>
-                                <li>리디자인</li>
-                                <li>적응형 웹 </li>
-                                <li>기여도: 100%</li>
-                            </ul>
-                            <div class="link">
-                                <a href="https://www.figma.com/design/nR6gblVYPHHoXgMzHSiU9a/%EB%B0%95%ED%98%9C%EC%A0%95-%EB%8B%A4%EC%84%B1?node-id=0-1&p=f&t=YTUtpUlzFNzBlkXO-0" target="_blank"><span>피그마보기</span></a>
-                                <a href="https://parkhyejoung.github.io/project_dasuong/" target="_blank"><span>프로토타입</span></a>
+                    <!--필요 시 사용(선택)-->
+<!--                     <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div> -->
+                </div>
+                <div class="swiper-slide design">
+                    <div class="container">
+                        <h2>Design</h2>
+                        <P>배너 , SNS광고 , 상세페이지 모음</P>
+                        <div class="swiper" id="sns_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1"><img src="./images/ham.jpg" alt=""></div>
+                                <div class="swiper-slide slide2"><img src="./images/ham.jpg" alt=""></div>
+                                <div class="swiper-slide slide3"><img src="./images/ham.jpg" alt=""></div>
+                                <div class="swiper-slide slide4"><img src="./images/ham.jpg" alt=""></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-            <!-- <div class="swiper disign">
-                <h3>SNS DESIGN</h3>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1"><img src="./images/test01.jpg" alt=""></div>
-                    <div class="swiper-slide slide2"><img src="./images/test02.jpg" alt=""></div>
-                    <div class="swiper-slide slide3"><img src="./images/test03.jpg" alt=""></div>
-                    <div class="swiper-slide slide4"><img src="./images/test04.jpg" alt=""></div>
-                </div>
-            </div>
-            <div class="swiper banner">
-                <h3>BANNER DESIGN</h3>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide b_slide1"><img src="./images/test01.jpg" alt=""></div>
-                    <div class="swiper-slide b_bslide2"><img src="./images/test02.jpg" alt=""></div>
-                    <div class="swiper-slide b_bslide3"><img src="./images/test03.jpg" alt=""></div>
-                    <div class="swiper-slide b_bslide4"><img src="./images/test04.jpg" alt=""></div>
-                </div>
-            </div>
-            <div class="swiper detail">
-                <h3>DETAIL PAGE DESIGN</h3>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1"><img src="./images/test01.jpg" alt=""></div>
-                    <div class="swiper-slide slide2"><img src="./images/test02.jpg" alt=""></div>
-                    <div class="swiper-slide slide3"><img src="./images/test03.jpg" alt=""></div>
-                    <div class="swiper-slide slide4"><img src="./images/test04.jpg" alt=""></div>
-                </div>
-            </div> -->
-        <!-- </div> -->
-            <div class="close">
-                <div class="content">
-                    <img src="./images/qr.png" alt="큐알코드">
-                    <div class="c_ment">
+                <div class="swiper-slide contact">
+                    <div class="contact_wrap">
+                        <img src="./images/qr.png" alt="큐알코드">
                         <p>끝까지 관심 있게 봐주셔서 감사합니다!</p>
                         <p>앞으로도 즐겁게 성장하는 모습<br>보여드리겠습니다!</p>
                     </div>
                 </div>
             </div>
+    </div>
+    <div class="popup_bg">
+        <div class="popup">
+            <img src="./images/ham.jpg" alt="">
         </div>
     </div>
 </body>
