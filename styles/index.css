@@ -15,7 +15,7 @@ header nav span {
 }
 #wrap .blue {
     height: 50vh;
-    background-color: #558bcf;
+    background-color: #000;
     position: relative;
 }
 #wrap .intro .blue h1 {
@@ -27,8 +27,8 @@ header nav span {
 }
 #wrap .intro h2 {
     text-align: center;
-    font-size: 1.5rem;
-    color: #558bcf;
+    font-size: 1.2rem;
+    color: #000;
     padding: 1.5% 0;
 }
 #wrap .intro .btn {
@@ -37,7 +37,7 @@ header nav span {
     gap: 50px;
 }
 #wrap .intro span {
-    background-color: #558bcf;
+    background-color: #000;
     padding: 14px;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
