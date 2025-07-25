@@ -52,3 +52,10 @@ nav.forEach((odj, idx)=>{
         wrap.slideTo(idx, 1000);
     })
 })
+const swiper = new Swiper('#project_swiper', {
+    loop: true,
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+});
