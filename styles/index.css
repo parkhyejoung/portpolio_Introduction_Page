@@ -15,7 +15,7 @@ header nav span {
 }
 #wrap .blue {
     height: 50vh;
-    background-color: #6E8ADC;
+    background-color: #558bcf;
     position: relative;
 }
 #wrap .intro .blue h1 {
@@ -95,7 +95,7 @@ header nav span {
 #wrap .profile .resume .re_zone .re_wrap .top {
     display: flex;
     flex-flow: row wrap;
-    border-right: 1px solid #D9D9D9;
+/*     border-right: 1px solid #D9D9D9; */
 }
 #wrap .profile .resume .re_zone .re_wrap .top .education li ,
 #wrap .profile .resume .re_zone .re_wrap .top .experience li  {
