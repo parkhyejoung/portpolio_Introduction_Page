@@ -75,13 +75,16 @@ header nav span {
 }
 #wrap .photo_info .info li a {
     margin-bottom: 26px;
-    color: #fff;
-    background-color: #9E9E9E;
-    padding: 2px 4px;
-    border-radius: 10px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 4px 18px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 #wrap .photo_info .info li a:hover {
-    background-color: #d9d9d9;
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s linear;
 }
 #wrap .profile .resume {
     display: flex;
