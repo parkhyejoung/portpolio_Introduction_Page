@@ -4,14 +4,7 @@ const wrap = new Swiper('#wrap',{
     mousewheel:true,
 })
 
-//프로젝트 슬라이드
-const project1 = new Swiper('#project_swiper',{
-    scrollbar:{el:'#project_swiper ~ .swiper-scrollbar'},
-    navigation:{
-        nextEl:'#project_swiper ~ .swiper-button-next',
-        prevEl:'#project_swiper ~ .swiper-button-prev',
-    }
-});
+
 
 //sns 프로젝트
 const sns = new Swiper('#sns_swiper',{
@@ -52,10 +45,10 @@ nav.forEach((odj, idx)=>{
         wrap.slideTo(idx, 1000);
     })
 })
-const swiper = new Swiper('#project_swiper', {
+const webProject = new Swiper('#project_swiper', {
     loop: true,
     pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+        el: '.project .swiper-pagination',
+        type:'bullets',
     },
 });

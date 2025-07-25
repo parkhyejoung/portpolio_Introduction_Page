@@ -228,15 +228,12 @@ header nav span {
     width: 950px;
     height: 1080px;
 }
-#project_swiper {
+.project .container {
     position: relative;
 }
-.swiper-pagination {
+.project .swiper-pagination {
+    bottom: 300px;
     position: absolute;
-    bottom: 20px; 
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
 }
 #wrap .qr_zone {
     height: 100vh;
