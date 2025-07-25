@@ -210,3 +210,13 @@ header nav span {
     width: 950px;
     height: 1080px;
 }
+#wrap .qr_zone {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#wrap .qr_zone .m {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
