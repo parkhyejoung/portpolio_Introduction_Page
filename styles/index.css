@@ -235,6 +235,47 @@ header nav span {
     bottom: 300px;
     position: absolute;
 }
+#wrap .swiper-wrapper .design .container {
+    width: 1000px;
+    margin: 90px auto 0;
+    padding: 20px;
+    background-color: aqua;
+}
+#wrap .swiper-wrapper .design .container h2 {}
+#wrap .swiper-wrapper .design .container h2+P {}
+#wrap .swiper-wrapper .design .container #sns_swiper {
+    height: 300px;
+    width: 800px;
+}
+#wrap .swiper-wrapper .design .container #sns_swiper .swiper-wrapper {
+    transition-timing-function: linear;
+}
+#wrap .swiper-wrapper .design .container #sns_swiper .swiper-slide {
+    width: 800px;
+    margin: 50px auto 0;
+    cursor: pointer;
+}
+#wrap .swiper-wrapper .design .container #sns_swiper .swiper-slide:hover {
+    opacity: 0.5;
+}
+#wrap .swiper-wrapper .design .container #sns_swiper .swiper-slide img {
+    width: 100%;
+}
+/* 디자인팝업 */
+.popup_bg {
+    position: fixed; left: 0; top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 900;
+    width: 100%; height: 100vh;
+    display: none;
+}
+.popup_bg .popup {
+    width: 700px; margin: 0 auto;
+    height: 80vh; overflow: auto;
+}
+.popup_bg .popup img {
+    width: 100%;
+}
 #wrap .qr_zone {
     height: 100vh;
     display: flex;
