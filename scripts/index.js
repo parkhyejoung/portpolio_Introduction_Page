@@ -29,11 +29,11 @@ for(let sns of snsProject){
     })
 }
 
-/* popup.addEventListener('click',()=>{
+popup.addEventListener('click',()=>{
     popup.style.display = 'none'
     wrap.mousewheel.enable();
 })
- */
+
 //내비게이션 클릭 시 해당 위치 스와이프(wrap변수)로 이동
 const nav = document.querySelectorAll('nav a');
 //수직 스와이프 이동 함수 

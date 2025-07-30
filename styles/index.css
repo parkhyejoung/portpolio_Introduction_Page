@@ -231,21 +231,35 @@ header nav span {
 .project .container {
     position: relative;
 }
+.swiper-slide.design .container h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+.swiper-slide.design .container P {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 14px 0px;
+
+}
 .project .swiper-pagination {
     bottom: 300px;
     position: absolute;
 }
 #wrap .swiper-wrapper .design .container {
     width: 1000px;
-    margin: 90px auto 0;
+    margin: 0 auto;
     padding: 20px;
-    background-color: aqua;
 }
 #wrap .swiper-wrapper .design .container h2 {}
 #wrap .swiper-wrapper .design .container h2+P {}
 #wrap .swiper-wrapper .design .container #sns_swiper {
-    height: 300px;
-    width: 800px;
+    height: 100%;
+    width: 1000px;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container #sns_swiper.s2 {
+    height: 450px;
+    width: 1000px;
+    overflow: hidden;
 }
 #wrap .swiper-wrapper .design .container #sns_swiper .swiper-wrapper {
     transition-timing-function: linear;
