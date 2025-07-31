@@ -208,6 +208,15 @@ header nav span {
     color: #fff;
     transition: 0.3s linear;
 }
+#wrap .thumnail .contents li .before {
+    background-color: #f1f1f1;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+#wrap .thumnail .contents li .before:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s linear;
+}
 #wrap .thumnail .mouk {
     background: url(../images/mockup/honey.png) center top -180px / cover;
     width: 950px;
