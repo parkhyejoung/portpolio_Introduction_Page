@@ -13,37 +13,58 @@ header nav span {
 #wrap {
     height: 100vh;
 }
-#wrap .blue {
-    height: 50vh;
+#wrap .intro {
     background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    z-index: 0;
 }
-#wrap .intro .blue h1 {
-    font-size: 5rem;
+#wrap .intro .circle {
+    position: absolute;
+    top: 236px;
+    left: 778px;
+    z-index: 1;
+}
+#wrap .intro .circle video {
+    width: 650px;
+    height: 400px;
+}
+#wrap .intro h1 {
     color: #fff;
-    font-weight: 700;
-    position: absolute; bottom: 10%; left: 50%;
-    transform: translate(-50%);
+    font-family: 'ElectricalSafety', sans-serif;
+    font-size: 6rem;
+    z-index: 2;
+    position: absolute;
+    top: 384px;
+    left: 280px;
 }
 #wrap .intro h2 {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #000;
-    padding: 1.5% 0;
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 479px;
+    left: 280px;
 }
 #wrap .intro .btn {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    flex-flow: column wrap;
+    gap: 58px;
+    position: absolute;
+    top: 312px;
+    left: 1200px;
+    z-index: 2;
+    width: 452px;
+    height: 274px;
+    text-align: left;
 }
 #wrap .intro span {
-    background-color: #000;
-    padding: 14px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    margin-left: 10px;
+    font-family: 'ElectricalSafety', sans-serif;
 }
 #wrap .profile .container {
     display: flex;
@@ -308,4 +329,17 @@ header nav span {
 #wrap .qr_zone .m {
     font-size: 1.5rem;
     margin-left: 10px;
+}
+@font-face {
+    font-family: 'ElectricalSafety';
+    src: url('./fonts/electrical_safety_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ElectricalSafety';
+    src: url('./fonts/electrical_safety_Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
