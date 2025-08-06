@@ -65,6 +65,27 @@ header nav span {
     font-size: 2.5rem;
     margin-left: 10px;
     font-family: 'ElectricalSafety', sans-serif;
+    position: relative;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+}
+/* #wrap .intro span:hover {
+    border-bottom: 3px solid #fff;
+    transition: 3s linear;
+} */
+#wrap .intro span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    transition: width 0.4s ease;
+}
+#wrap .intro span:hover::after {
+    width: 100%;
 }
 #wrap .profile .container {
     display: flex;
