@@ -8,6 +8,11 @@ header nav span {
     text-transform: uppercase;
     font-weight: 500;
 }
+header nav span:hover {
+    background: linear-gradient(90deg, #2ff3f3 , #24dd68);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 #wrap {
     height: 100vh;
 }
@@ -191,89 +196,130 @@ header nav span {
     color: #9E9E9E;
 }
 #wrap .profile .resume .re_zone .re_wrap .bottom .skill li img {
-    margin-right: 10PX;
+    margin-right: 10px;
 }
 #wrap .thumnail {
     display: flex;
     flex-flow: row nowrap;
-    background-color: #f1f1f1;
-    padding-left: 5%;
+    height: 100vh;
 }
 #wrap .thumnail .contents {
+    background: url(../images/wd/bg3.png);
     width: 50vw;
-    height: 50vh;
-    padding-top: 8%;
+    height: 100vh;
 }
-#wrap .thumnail .contents li {
-    font-size: 1rem;
+#wrap .thumnail .contents h1 {
+    font-size: 2.5rem;
+    font-family: 'ElectricalSafety', sans-serif;
+    color: #fff;
+    padding-top: 100px;
+    padding-left: 110px;
+    padding-bottom: 25px;
 }
-#wrap .thumnail .contents li:nth-of-type(1) {
+#wrap .thumnail .contents .se {
+    background-color: #fff;
+    width: 753px;
+    height: 624px;
+    border-radius: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+#project_swiper .swiper-slide.slide1 .sedept {
+    padding-top: 49px;
+    padding-left: 34px;
+}
+#project_swiper .swiper-slide.slide1 .sedept .p_title {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+#project_swiper .swiper-slide.slide1 .sedept .m_title {
     font-size: 1.5rem;
-    font-weight: 600;
+    padding-bottom: 60px;
 }
-#wrap .thumnail .contents li:nth-of-type(2) {
+#project_swiper .swiper-slide.slide1 .sedept .use {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+#project_swiper .swiper-slide.slide1 .sedept .program {
     font-size: 1rem;
-    margin-top: 127px;
-    margin-bottom: 30px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+#project_swiper .swiper-slide.slide1 .sedept .period {
+    font-size: 1.1rem;
     font-weight: 600;
+    padding-bottom: 4px;
 }
-#wrap .thumnail .contents li:nth-of-type(3) {
-    margin-bottom: 30px;
+#project_swiper .swiper-slide.slide1 .sedept .time {
+    font-size: 1rem;
+    padding-bottom: 20px;
 }
-#wrap .thumnail .contents li:nth-of-type(4) {
+#project_swiper .swiper-slide.slide1 .sedept .page_t {
+    font-size: 1.1rem;
     font-weight: 600;
+    padding-bottom: 4px;
 }
-#wrap .thumnail .contents li:nth-of-type(5) {
-    margin-bottom: 30px;
+#project_swiper .swiper-slide.slide1 .sedept .page {
+    font-size: 1rem;
+    padding-bottom: 20px;
 }
-#wrap .thumnail .contents li:nth-of-type(6) {
-    margin-bottom: 30px;
+#project_swiper .swiper-slide.slide1 .sedept .layout_t {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-bottom: 4px;
 }
-#wrap .thumnail .contents li:nth-of-type(7) {
-    margin-bottom: 60px;
+#project_swiper .swiper-slide.slide1 .sedept .layout {
+    font-size: 1rem;
+    padding-bottom: 20px;
 }
-#wrap .thumnail .contents li a {
+#wrap .thumnail .contents .se .bt {
+    padding-top: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 14px;
+}
+#wrap .thumnail .contents .se .bt a {
     padding: 10px 20px;
     background-color: #fff;
     border-radius: 30px;
-    margin-left: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
-#wrap .thumnail .contents li a:nth-of-type(4) {
-    background-color: #f1f1f1;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-}
-#wrap .thumnail .contents li a:hover {
+#wrap .thumnail .contents .se .bt a:hover {
     background-color: #000;
     color: #fff;
     transition: 0.3s linear;
 }
-#wrap .thumnail .contents li .before {
+#wrap .thumnail .contents .se .bt a:before {
     background-color: #f1f1f1;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
-#wrap .thumnail .contents li .before:hover {
+#wrap .thumnail .contents .se .bt a:nth-of-type(4) {
+    background-color: #f1f1f1;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+#wrap .thumnail .contents .se .bt a:nth-of-type(4):hover {
     background-color: #000;
     color: #fff;
     transition: 0.3s linear;
 }
 #wrap .thumnail .mouk {
-    background: url(../images/mockup/honey.png) center top -180px / cover;
+    background: url(../images/mockup/honey.png) center top -120px / cover;
     width: 950px;
     height: 1080px;
 }
 #wrap .thumnail .mouk2 {
-    background: url(../images/mockup/marketb.png) center top -180px / cover;
+    background: url(../images/mockup/marketb.png) center top -120px / cover;
     width: 950px;
     height: 1080px;
 }
 #wrap .thumnail .mouk3 {
-    background: url(../images/mockup/dasung.png) center top -180px / cover;
+    background: url(../images/mockup/dasung.png) center top -120px / cover;
     width: 950px;
     height: 1080px;
 }
 #wrap .thumnail .mouk4 {
-    background: url(../images/mockup/ably.png) center top -180px / cover;
+    background: url(../images/mockup/ably.png) center top -120px / cover;
     width: 950px;
     height: 1080px;
 }
@@ -283,6 +329,8 @@ header nav span {
 .swiper-slide.design .container h2 {
     font-size: 2rem;
     text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
 }
 .swiper-slide.design .container P {
     font-size: 1.3rem;
@@ -291,7 +339,7 @@ header nav span {
 
 }
 .project .swiper-pagination {
-    bottom: 300px;
+    bottom: 150px;
     position: absolute;
 }
 #wrap .swiper-wrapper .design .container {
@@ -344,10 +392,14 @@ header nav span {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(../images/wd/bg2.png);
 }
 #wrap .qr_zone .m {
     font-size: 1.5rem;
     margin-left: 10px;
+}
+#wrap .qr_zone .m p {
+    color: #fff;
 }
 @font-face {
     font-family: 'ElectricalSafety';
