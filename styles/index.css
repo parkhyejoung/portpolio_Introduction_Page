@@ -224,54 +224,54 @@ header nav span:hover {
     margin: 0 auto;
     position: relative;
 }
-#project_swiper .swiper-slide.slide1 .sedept {
+#project_swiper .sedept {
     padding-top: 49px;
     padding-left: 34px;
 }
-#project_swiper .swiper-slide.slide1 .sedept .p_title {
+#project_swiper .sedept .p_title {
     font-weight: 600;
     font-size: 1.8rem;
 }
-#project_swiper .swiper-slide.slide1 .sedept .m_title {
+#project_swiper .sedept .m_title {
     font-size: 1.5rem;
     padding-bottom: 60px;
 }
-#project_swiper .swiper-slide.slide1 .sedept .use {
+#project_swiper  .sedept .use {
     font-size: 1.1rem;
     font-weight: 600;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
 }
-#project_swiper .swiper-slide.slide1 .sedept .program {
+#project_swiper .sedept .program {
     font-size: 1rem;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     text-transform: uppercase;
 }
-#project_swiper .swiper-slide.slide1 .sedept .period {
+#project_swiper .sedept .period {
     font-size: 1.1rem;
     font-weight: 600;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
 }
-#project_swiper .swiper-slide.slide1 .sedept .time {
+#project_swiper .sedept .time {
     font-size: 1rem;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
-#project_swiper .swiper-slide.slide1 .sedept .page_t {
+#project_swiper .sedept .page_t {
     font-size: 1.1rem;
     font-weight: 600;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
 }
-#project_swiper .swiper-slide.slide1 .sedept .page {
+#project_swiper .sedept .page {
     font-size: 1rem;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
-#project_swiper .swiper-slide.slide1 .sedept .layout_t {
+#project_swiper .sedept .layout_t {
     font-size: 1.1rem;
     font-weight: 600;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
 }
-#project_swiper .swiper-slide.slide1 .sedept .layout {
+#project_swiper .sedept .layout {
     font-size: 1rem;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 #wrap .thumnail .contents .se .bt {
     padding-top: 40px;
@@ -294,11 +294,11 @@ header nav span:hover {
     background-color: #f1f1f1;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
-#wrap .thumnail .contents .se .bt a:nth-of-type(4) {
+#wrap .thumnail .contents .se .bt a:last-of-type {
     background-color: #f1f1f1;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
-#wrap .thumnail .contents .se .bt a:nth-of-type(4):hover {
+#wrap .thumnail .contents .se .bt a:last-of-type(4):hover {
     background-color: #000;
     color: #fff;
     transition: 0.3s linear;
@@ -392,7 +392,7 @@ header nav span:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../images/wd/bg2.png);
+    background-color: #000;
 }
 #wrap .qr_zone .m {
     font-size: 1.5rem;
@@ -400,6 +400,7 @@ header nav span:hover {
 }
 #wrap .qr_zone .m p {
     color: #fff;
+    margin-bottom: 4px;
 }
 @font-face {
     font-family: 'ElectricalSafety';
