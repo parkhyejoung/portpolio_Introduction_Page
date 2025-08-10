@@ -329,7 +329,7 @@ header nav span:hover {
 .swiper-slide.design .container h2 {
     font-size: 2rem;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
     text-transform: uppercase;
 }
 .swiper-slide.design .container P {
@@ -355,15 +355,15 @@ header nav span:hover {
 }
 #wrap .swiper-wrapper .swiper-slide.design .container #sns_swiper.s2 {
     height: 450px;
-    width: 1000px;
+    width: 1400px;
     overflow: hidden;
 }
 #wrap .swiper-wrapper .design .container #sns_swiper .swiper-wrapper {
     transition-timing-function: linear;
 }
 #wrap .swiper-wrapper .design .container #sns_swiper .swiper-slide {
-    width: 800px;
-    margin: 50px auto 0;
+    width: 1400px;
+    margin: 35px auto 0;
     cursor: pointer;
 }
 #wrap .swiper-wrapper .design .container #sns_swiper .swiper-slide:hover {
