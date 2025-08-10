@@ -343,7 +343,7 @@ header nav span:hover {
     position: absolute;
 }
 #wrap .swiper-wrapper .design .container {
-    width: 1000px;
+    width: 1400px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -351,7 +351,7 @@ header nav span:hover {
 #wrap .swiper-wrapper .design .container h2+P {}
 #wrap .swiper-wrapper .design .container #sns_swiper {
     height: 100%;
-    width: 1000px;
+    width: 1400px;
 }
 #wrap .swiper-wrapper .swiper-slide.design .container #sns_swiper.s2 {
     height: 450px;
