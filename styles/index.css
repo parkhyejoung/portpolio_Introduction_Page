@@ -6,6 +6,7 @@ header nav {
 }
 header nav span {
     text-transform: uppercase;
+    font-family: 'Cafe24PROUP', sans-serif;
     font-weight: 500;
 }
 header nav span:hover {
@@ -49,6 +50,7 @@ header nav span:hover {
     position: absolute;
     top: 479px;
     left: 280px;
+    font-family: 'PFStardustExtraBold', sans-serif;
 }
 #wrap .intro .btn {
     display: flex;
@@ -413,5 +415,17 @@ header nav span:hover {
     font-family: 'ElectricalSafety';
     src: url('./fonts/electrical_safety_Bold.ttf') format('truetype');
     font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24PROUP';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2507-1@1.0/Cafe24PROUP.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PFStardustExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/PFStardustExtraBold.woff2') format('woff2');
+    font-weight: 800;
     font-style: normal;
 }
