@@ -1,269 +1,550 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025 박혜정 포트폴리오</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-    <!-- 웹 연결 -->
-    <!--플러그인 필수 css cdn 연결-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!--플러그인 필수 JS cdn 연결-->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/index.css">
-    <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/scroll.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Park Hye Joung — Web Design Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
+  <style>
+    html, body { overflow: hidden; height: 100%; }
+
+    .slides-wrapper {
+      transition: transform 0.85s cubic-bezier(0.77, 0, 0.18, 1);
+      will-change: transform;
+    }
+
+    /* Dot navigation */
+    .dot-nav {
+      position: fixed;
+      right: 28px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .dot-nav__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.22);
+      cursor: pointer;
+      transition: transform 0.3s;
+      border: none;
+      padding: 0;
+    }
+    .dot-nav__dot.active {
+      background: #1a1a1a;
+      transform: scale(1.5);
+    }
+    .dot-nav.dots-light .dot-nav__dot { background: rgba(255,255,255,0.35); }
+    .dot-nav.dots-light .dot-nav__dot.active { background: #fff; }
+
+    /* Fixed nav */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 500;
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      padding: 10px 0 10px;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(6px);
+    }
+    .nav--dark {
+      background: rgba(45,45,45,0.95);
+    }
+    .nav__link {
+      transition: opacity 0.2s, color 0.4s ease;
+    }
+    .nav--dark .nav__link {
+      color: #ffffff;
+    }
+    .progress-bar {
+      position: fixed;
+      top: 0; left: 0;
+      height: 2px;
+      background: #1a1a1a;
+      transition: width 0.5s ease;
+      z-index: 9999;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#"><span>Intro</span></a>
-            <a href="#"><span>Profile</span></a>
-            <a href="#"><span>webDesign</span></a>
-            <a href="#"><span>Project</span></a>
-            <a href="#"><span>Contact</span></a>
-        </nav>
-    </header>
-    <div class="swiper" id="wrap">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide intro">
-                <div class="m_rigth">
-                    <h1>PORTFOLIO 2025</h1>
-                    <h2>@PARK HYE JOUNG</h2>
-                </div>
-                <div class="circle">
-                    <video src="./video/video.mp4" autoplay muted loop playsinline>
-                    </video>
-                </div>
-                <div class="btn">
-                    <div class="bt"><img src="./images/arrow_forward_ios.png" alt=""><span>Web designer</span></div>
-                    <div class="bt"><img src="./images/arrow_forward_ios.png" alt=""><span>UX/UI designer</span></div>
-                    <div class="bt"><img src="./images/arrow_forward_ios.png" alt=""><span>Publisher</span></div>
-                </div>
-            </div>
-            <div class="swiper-slide profile">
-                <div class="container">
-                    <div class="photo_info">
-                        <img src="./images/mypic.png" alt="">
-                        <ul class="info">
-                            <li><span class="i_title">ABOUT</span></li>
-                            <li>박혜정</li>
-                            <li>1996.03.08</li>
-                            <li>인천광역시 연수구</li>
-                            <li>qkrgpwjd1996@gmail.com</li>
-                            <li>010-3573-7817</li>
-                            <li>
-                                <a href="https://github.com/" target="_blank">깃허브 바로가기</a>
-                            </li>
-                        </ul>
-                    </div> 
-                    <div class="resume">
-                        <div class="re_zone">
-                            <div class="top_co">
-                                <h2>‘사용자의 시선과 마음을 사로잡는 성장하는 디자이너 박혜정입니다”</h2>
-                            </div>
-                            <div class="re_wrap">
-                                <div class="top">
-                                    <ul class="education">
-                                        <li><p class="title">Education</p></li>
-                                        <li><span>2025-08<em class="b_font"> 프론트엔드 UIUX 반응형 웹디자인&<br>웹퍼블리셔 양성과정 수료(예정)</em></span></li>
-                                        <li><span>2015.02<em class="b_font"> 경인여자대학교 호텔카지노과 졸업</em></span></li>
-                                    </ul>
-                                    <ul class="experience">
-                                        <li><p class="title">Experience</p></li>
-                                        <li><span>2019.07 ~ 2024.08<em class="b_font"> 메타넷엠플랫폼</em></span></li>
-                                        <li><span>2017.12 ~ 2018.05<em class="b_font"> 네이쳐리퍼블릭</em></span></li>
-                                        <li><span>2016.07 ~ 2017.03<em class="b_font"> 해테제과 빨라쪼 아이스크림</em></span></li>
-                                        <li><span>2014.09 ~ 2016.08<em class="b_font"> 이랜드외식사업부 애슐리</em></span></li>
-                                    </ul>
-                                </div>
-                                <div class="bottom">
-                                    <ul class="licenses">
-                                        <li><p class="title">Licenses</p></li>
-                                        <li><span>2019.03<em> 컴퓨터활용능력2급</em></span></li>
-                                        <li><span>2019.03<em> 워드프로세서 1급</em></span></li>
-                                        <li><span>2015.11<em> 식품가공기능사</em></span></li>
-                                    </ul>
-                                    <ul class="skill">
-                                        <li><p class="title">Skill<p></li>
-                                        <li><img src="./images/icon/ai.png" alt="일러스트레이터"><em> 웹페이지, UIUX 디자인 및 로고, 명함 디자인 가능 </em></li> 
-                                        <li><img src="./images/icon/ps.png" alt="포토샵"><em> 배너, 광고 디자인 ,sns 광고 가능</em></li> 
-                                        <li><img src="./images/icon/figma.png" alt="피그마"><em> Figma를 활용한 UI/UX 디자인 및 웹페이지 레이아웃 디자인 가능</em></li> 
-                                        <li><img src="./images/icon/html.png" alt="HTML"><em> 웹표준&웹접근성에 맞게 최신 코드를 다룰 수 있다.</em></li>
-                                        <li><img src="./images/icon/css.png" alt="HTML"><em> CSS 3.0 Flex 및 Grid 레이아웃 기반의 반응형 웹사이트 개발</em></li>
-                                        <li><img src="./images/icon/js.png" alt="자바스크립트"><em> 로그인 유효성 검사 및 무한 스크롤 , 슬라이드 , 메뉴 등<br>다양한 웹에 들어가는 동적인 기능을 할 수 있다<br>자바스크립트 기초를 이해하고 팀 협업에 도움이 될 수 있다.</em></li> 
-                                        <li><img src="./images/icon/git.png" alt="깃허브"><em> git 명령을 이용해 github로 개인작업과 원활한 팀협업을 할 수 있다.</em></li> 
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide project">
-                <div class="container">
-                    <div class="swiper" id="project_swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide slide1">
-                                <div class="thumnail">
-                                    <div class="contents">
-                                        <h1>WEB DESIGN PROJECT</h1>
-                                        <div class="se">
-                                            <div class="sedept">
-                                                <p class="p_title">REDESIGN PROJECT 01</p>
-                                                <p class="m_title">안상규벌꿀</p>
-                                                <p class="use">사용 프로그램</p>
-                                                <p class="program">figma, photoshop , html , css , javascript</p>
-                                                <p class="period">프로젝트 기간</p>
-                                                <p class="time">2025.07~(30시간)</p>
-                                                <p class="page_t">제작페이지</p>
-                                                <p class="page">index, 장바구니, 상품상세</p>
-                                                <p class="layout_t">리디자인 방향</p>
-                                                <p class="layout">1920 웹 레이아웃 제작 / 기존 UXUI 개선</p>
-                                                <div class="bt">
-                                                    <a href="https://parkhyejoung.github.io/project_ahnsang_gyu_honey/" target="_blank">프로토타입(github)</a>
-                                                    <a href="https://www.figma.com/proto/374ZJejVQ1r0YwA45bFzK1/%EC%95%88%EC%83%81%EA%B7%9C%EB%B2%8C%EA%BF%80-%EA%B8%B0%ED%9A%8D%EC%84%9C?node-id=0-28&p=f&t=uXoOrr9jUmXujkjW-1&scaling=contain&content-scaling=fixed&page-id=0%3A1" target="_blank">기획서</a>
-                                                    <a href="https://www.figma.com/design/ZUHfn7ac1VWzMFVZNpGXW0/%EB%B0%95%ED%98%9C%EC%A0%95-%EC%95%88%EC%83%81%EA%B7%9C%EB%B2%8C%EA%BF%80-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=35-74&p=f&t=zU7s4acR8ry9tugE-0" target="_blank">피그마 프로토타입 보기</a>
-                                                    <a href="https://beeman.co.kr/" target="_blank">원본 사이트 보기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mouk"></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide2">
-                                <div class="thumnail">
-                                    <div class="contents">
-                                        <h1>WEB DESIGN PROJECT</h1>
-                                        <div class="se">
-                                            <div class="sedept">
-                                                <p class="p_title">REDESIGN PROJECT 02</p>
-                                                <p class="m_title">마켓비</p>
-                                                <p class="use">사용 프로그램</p>
-                                                <p class="program">figma, photoshop , html , css , javascript</p>
-                                                <p class="period">프로젝트 기간</p>
-                                                <p class="time">2025.07~(34시간)</p>
-                                                <p class="page_t">제작페이지</p>
-                                                <p class="page">index, 장바구니, 상품상세</p>
-                                                <p class="layout_t">리디자인 방향</p>
-                                                <p class="layout">1920 웹 레이아웃 제작 / 기존 UXUI 개선</p>
-                                                <div class="bt">
-                                                    <a href="https://parkhyejoung.github.io/project_market_b/" target="_blank">프로토타입(github)</a>
-                                                    <a href="https://www.figma.com/proto/c2dzWiABulJaG2Z8TbfDWe/%EB%A7%88%EC%BC%93%EB%B9%84-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B8%B0%ED%9A%8D%EC%84%9C?node-id=0-28&t=u3luiOYRXuPGOA0o-1" target="_blank">기획서</a>
-                                                    <a href="https://www.figma.com/design/7zu76hzZKacScTZNyoDxUg/%EB%B0%95%ED%98%9C%EC%A0%95---%EB%A7%88%EC%BC%93%EB%B9%84-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0-1&p=f&t=yOmGdQ0lkBskeBBZ-0" target="_blank">피그마 프로토타입 보기</a>
-                                                    <a href="https://marketb.kr/?srsltid=AfmBOoovw8ateW9JTJbEXN6JnJd8wkyKhkAU4zLo_QrKgDM_GODv3Abd" target="_blank">원본 사이트 보기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mouk2"></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide3">
-                                <div class="thumnail">
-                                    <div class="contents">
-                                        <h1>WEB DESIGN PROJECT</h1>
-                                        <div class="se">
-                                            <div class="sedept">
-                                                <p class="p_title">REDESIGN PROJECT 03</p>
-                                                <p class="m_title">다성</p>
-                                                <p class="use">사용 프로그램</p>
-                                                <p class="program">figma, photoshop , html , css , javascript</p>
-                                                <p class="period">프로젝트 기간</p>
-                                                <p class="time">2025.07~(27시간)</p>
-                                                <p class="page_t">제작페이지</p>
-                                                <p class="page">index</p>
-                                                <p class="layout_t">리디자인 방향</p>
-                                                <p class="layout">1920 웹 레이아웃 제작 / 기존 UXUI 개선</p>
-                                                <div class="bt">
-                                                    <a href="https://parkhyejoung.github.io/project_dasuong/" target="_blank">프로토타입(github)</a>
-                                                    <a href="https://www.figma.com/design/nR6gblVYPHHoXgMzHSiU9a/%EB%B0%95%ED%98%9C%EC%A0%95-%EB%8B%A4%EC%84%B1?node-id=0-1&p=f&t=vnL3tgTRz7aK02CB-0" target="_blank">피그마 프로토타입 보기</a>
-                                                    <a href="http://ds21c.com/" target="_blank">원본 사이트 보기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mouk3"></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide4">
-                                <div class="thumnail">
-                                    <div class="contents">
-                                        <h1>WEB DESIGN PROJECT</h1>
-                                        <div class="se">
-                                            <div class="sedept">
-                                                <p class="p_title">REDESIGN PROJECT 04</p>
-                                                <p class="m_title">에이블리</p>
-                                                <p class="use">사용 프로그램</p>
-                                                <p class="program">figma, photoshop , html , css , javascript</p>
-                                                <p class="period">프로젝트 기간</p>
-                                                <p class="time">2025.07~(27시간)</p>
-                                                <p class="page_t">제작페이지</p>
-                                                <p class="page">index</p>
-                                                <p class="layout_t">리디자인 방향</p>
-                                                <p class="layout">기존 모바일 레이아웃 > 데스크탑 1920 레이아웃 변경</p>
-                                                <div class="bt">
-                                                    <a href="https://parkhyejoung.github.io/ably/" target="_blank">프로토타입(github)</a>
-                                                    <a href="https://www.figma.com/design/GmLxG0qq6VLl57GAjZ6Lm3/%EB%B0%95%ED%98%9C%EC%A0%95-%EC%97%90%EC%9D%B4%EB%B8%94%EB%A6%AC-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=196-88&p=f&t=7PNjtWaqrglsUyuQ-0" target="_blank">피그마 프로토타입 보기</a>
-                                                    <a href="https://m.a-bly.com/" target="_blank">원본 사이트 보기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mouk4"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-                <div class="swiper-slide design">
-                    <div class="container">
-                        <h2>Design</h2>
-                        <P>배너 , SNS광고 , 상세페이지 모음</P>
-                        <div class="swiper" id="sns_swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide slide1"><img src="./images/design/br01.jpg" alt=""></div>
-                                <div class="swiper-slide slide2"><img src="./images/design/br02.jpg" alt=""></div>
-                                <div class="swiper-slide slide3"><img src="./images/design/br03.jpg" alt=""></div>
-                                <div class="swiper-slide slide4"><img src="./images/design/br04.jpg" alt=""></div>
-                            </div>
-                        </div>
-                        <div class="swiper s2" id="sns_swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide slide1"><img src="./images/design/sns01.png" alt=""></div>
-                                <div class="swiper-slide slide2"><img src="./images/design/sns02.png" alt=""></div>
-                                <div class="swiper-slide slide3"><img src="./images/design/sns03.jpg" alt=""></div>
-                                <div class="swiper-slide slide4"><img src="./images/design/sns04.jpg" alt=""></div>
-                                <div class="swiper-slide slide4"><img src="./images/design/detail01.png" alt=""></div>
-                                <div class="swiper-slide slide4"><img src="./images/design/detail02.png" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide contact">
-                    <div class="contact_wrap">
-                        <div class="qr_zone">
-                            <img src="./images/qr.png" alt="큐알코드">
-                            <div class="m">
-                                <p>끝까지 관심 있게 봐주셔서 감사합니다!</p>
-                                <p>앞으로도 즐겁게 성장하는 모습</p>
-                                <p>보여드리겠습니다!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Fixed top navigation -->
+  <nav class="nav" id="mainNav">
+    <a href="#intro" class="nav__link" data-index="0">INTRO</a>
+    <a href="#profile" class="nav__link" data-index="1">PROFILE</a>
+    <a href="#webdesign" class="nav__link" data-index="2">WEBDESIGN</a>
+    <a href="#project" class="nav__link" data-index="3">PROJECT</a>
+    <a href="#contact" class="nav__link" data-index="4">CONTACT</a>
+  </nav>
+
+  <!-- Dot navigation -->
+  <nav class="dot-nav" id="dotNav">
+    <button class="dot-nav__dot active" data-index="0" title="Intro"></button>
+    <button class="dot-nav__dot" data-index="1" title="Profile"></button>
+    <button class="dot-nav__dot" data-index="2" title="Web Design"></button>
+    <button class="dot-nav__dot" data-index="3" title="Art Work"></button>
+    <button class="dot-nav__dot" data-index="4" title="Contact"></button>
+  </nav>
+
+  <!-- Slides wrapper -->
+  <div class="slides-wrapper" id="slidesWrapper">
+
+  <!-- ===== SECTION 1: INTRO ===== -->
+  <section id="intro" class="section section--intro">
+    <canvas id="intro-canvas-bg"></canvas>
+
+    <div class="intro__content">
+      <h1 class="intro__title">
+        <span class="intro__title--light">Good Design</span><br />
+        <span class="intro__title--heavy">FOR GREAT BUSINESS</span>
+      </h1>
+      <!-- <p class="intro__sub">모든 픽셀에 브랜드의 가치를 담아냅니다</p> -->
     </div>
-    <div class="popup_bg">
-        <div class="popup">
-            <img src="./images/ham.jpg" alt="">
+
+    <div class="intro__badge">
+      <span>WEB DESIGN PORTFOLIO</span><br />
+      <span>@ Park Hye Joung</span>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: PROFILE (ABOUT ME) ===== -->
+  <section id="profile" class="section section--profile">
+    <div class="profile__left">
+      <h2 class="profile__name-en">Park Hye Joung</h2>
+      <p class="profile__name-kr">박혜정</p>
+      <div class="profile__img-wrap">
+        <div class="profile__img-placeholder">
+          <span>Photo</span>
         </div>
+      </div>
+      <div class="profile__info">
+        <div class="profile__info-item">
+          <span class="profile__info-label">Birth</span>
+          <span class="profile__info-value">1996.03.08</span>
+        </div>
+        <div class="profile__info-item">
+          <span class="profile__info-label">Location</span>
+          <span class="profile__info-value">인천광역시 연수구</span>
+        </div>
+        <div class="profile__info-item">
+          <span class="profile__info-label">Email</span>
+          <span class="profile__info-value">roflsdl@naver.com</span>
+        </div>
+        <div class="profile__info-item">
+          <span class="profile__info-label">Phone</span>
+          <span class="profile__info-value">010-3573-7817</span>
+        </div>
+      </div>
     </div>
+
+    <div class="profile__right">
+      <div class="profile__block">
+        <h3 class="profile__section-title">SKILLS</h3>
+        <div class="profile__skills">
+          <div class="skill-row"><span class="skill-name">Illustrator</span><span class="skill-desc">/ 웹페이지, UIUX 디자인 및 로고, 명함 디자인 가능</span></div>
+          <div class="skill-row"><span class="skill-name">Photoshop</span><span class="skill-desc">/ 배너, 광고 디자인 ,sns 광고 가능</span></div>
+          <div class="skill-row"><span class="skill-name">Figma</span><span class="skill-desc">/ Figma를 활용한 디자인 및 UXUI 레이아웃 디자인 가능</span></div>
+          <div class="skill-row"><span class="skill-name">HTML</span><span class="skill-desc">/ 웹표준&웹접근성에 맞게 최신 코드를 다룰 수 있다.</span></div>
+          <div class="skill-row"><span class="skill-name">CSS</span><span class="skill-desc">/ CSS 3.0 Flex 및 Grid 레이아웃 기반의 웹사이트 개발</span></div>
+          <div class="skill-row"><span class="skill-name">github</span><span class="skill-desc">/ git 명령을 이용해 github로 개인작업과 원활한 팀협업을 할 수 있다.</span></div>
+        </div>
+      </div>
+
+      <div class="profile__block">
+        <h3 class="profile__section-title">Education &amp; Licenses</h3>
+        <div class="profile__edu">
+          <p>2015. 02 / 경인여자대학교 호텔카지노과 졸업</p>
+          <p>2025. 08 / 프론트엔드 UIUX 반응형 웹디자인&웹퍼블리셔 양성과정 수료</p>
+          <p>컴퓨터활용능력2급</p>
+          <p>워드프로세서 1급</p>
+          <p>식품가공기능사</p>
+        </div>
+      </div>
+
+      <div class="profile__block">
+        <h3 class="profile__section-title">EXPERIENCE</h3>
+        <div class="profile__exp">
+          <p>2025.09 ~ 2026.04 에스엠홀딩스</p>
+          <p>2019.07 ~ 2024.08 메타넷엠플랫폼</p>
+          <p>2017.12 ~ 2018.05 네이처리퍼블릭</p>
+          <p>2016.07 ~ 2017.03 해테제과 빨라쪼 아이스크림</p>
+          <p>2014.09 ~ 2016.08 이랜드외식사업부 애슐리</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile__watermark">ABOUT<br />ME</div>
+  </section>
+
+  <section id="webdesign" class="section section--webdesign">
+    <div class="webdesign__inner">
+      <div class="section__label">W E B &nbsp; D E S I G N</div>
+      <h2 class="section__title">Website Projects</h2>
+      <hr class="section__divider" />
+
+      <div class="projects__grid">
+        <a class="project-card" href="https://parkhyejoung.github.io/project_ahnsang_gyu_honey/" target="_blank" rel="noopener">
+          <p class="project-card__label">PROJECT 01 / 안상규벌꿀</p>
+          <div class="project-card__img">
+            <img src="./images/honey.png" alt="안상규벌꿀 프로젝트 이미지" />
+          </div>
+          <p class="project-card__desc">1920 웹 레이아웃 제작 / 기존 UXUI 개선 리디자인<br />제작페이지 : index, 장바구니, 상품상세</p>
+          <div class="project-card__btn">VIEW PROJECT ↗</div>
+        </a>
+        <a class="project-card" href="https://parkhyejoung.github.io/project_market_b/" target="_blank" rel="noopener">
+          <p class="project-card__label">PROJECT 02 / 마켓비</p>
+          <div class="project-card__img">
+            <img src="./images/marketb.png" alt="마켓비 프로젝트 이미지" />
+          </div>
+          <p class="project-card__desc">1920 웹 레이아웃 제작 / 기존 UXUI 개선 리디자인</p>
+          <div class="project-card__btn">VIEW PROJECT ↗</div>
+        </a>
+        <a class="project-card" href="https://parkhyejoung.github.io/ably/" target="_blank" rel="noopener">
+          <p class="project-card__label">PROJECT 03 / 에이블리</p>
+          <div class="project-card__img">
+            <img src="./images/ably.png" alt="에이블리 프로젝트 이미지" />
+          </div>
+          <p class="project-card__desc">1920 웹 레이아웃 제작 / 기존 UXUI 개선 리디자인</p>
+          <div class="project-card__btn">VIEW PROJECT ↗</div>
+        </a>
+      </div>
+
+      <p class="section__footer-label">WEB DESIGN PORTFOLIO</p>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: PROJECT (ART WORK) ===== -->
+  <section id="project" class="section section--project">
+    <div class="project__inner">
+      <div class="section__label">D E S I G N &nbsp; W O R K S</div>
+      <h2 class="section__title section__title--light">Art Work</h2>
+      <hr class="section__divider section__divider--light" />
+
+      <div class="artwork__grid">
+        <!-- Banner Design -->
+        <div class="artwork__col">
+          <h3 class="artwork__col-title">BANNER DESIGN</h3>
+          <div class="banner-list">
+            <div class="img-slot banner-item" data-label="BANNER 01" onclick="openModal(this)">
+              <img src="" alt="Banner 01" style="display:none;" />
+              <span class="img-slot__placeholder">BANNER 01<em>이미지를 추가하세요</em></span>
+              <div class="img-slot__hover">🔍 클릭하여 확대</div>
+            </div>
+            <div class="img-slot banner-item" data-label="BANNER 02" onclick="openModal(this)">
+              <img src="" alt="Banner 02" style="display:none;" />
+              <span class="img-slot__placeholder">BANNER 02<em>이미지를 추가하세요</em></span>
+              <div class="img-slot__hover">🔍 클릭하여 확대</div>
+            </div>
+            <div class="img-slot banner-item" data-label="BANNER 03" onclick="openModal(this)">
+              <img src="" alt="Banner 03" style="display:none;" />
+              <span class="img-slot__placeholder">BANNER 03<em>이미지를 추가하세요</em></span>
+              <div class="img-slot__hover">🔍 클릭하여 확대</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SNS Design -->
+        <div class="artwork__col">
+          <h3 class="artwork__col-title">SNS DESIGN</h3>
+          <div class="sns-grid">
+            <div class="img-slot sns-item" data-label="SNS 01" onclick="openModal(this)">
+              <img src="" alt="SNS 01" style="display:none;" />
+              <span class="img-slot__placeholder">SNS 01</span>
+              <div class="img-slot__hover">🔍</div>
+            </div>
+            <div class="img-slot sns-item" data-label="SNS 02" onclick="openModal(this)">
+              <img src="" alt="SNS 02" style="display:none;" />
+              <span class="img-slot__placeholder">SNS 02</span>
+              <div class="img-slot__hover">🔍</div>
+            </div>
+            <div class="img-slot sns-item" data-label="SNS 03" onclick="openModal(this)">
+              <img src="" alt="SNS 03" style="display:none;" />
+              <span class="img-slot__placeholder">SNS 03</span>
+              <div class="img-slot__hover">🔍</div>
+            </div>
+            <div class="img-slot sns-item" data-label="SNS 04" onclick="openModal(this)">
+              <img src="" alt="SNS 04" style="display:none;" />
+              <span class="img-slot__placeholder">SNS 04</span>
+              <div class="img-slot__hover">🔍</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detail Page -->
+        <div class="artwork__col">
+          <h3 class="artwork__col-title">DETAIL PAGE</h3>
+          <div class="img-slot detail-item" data-label="DETAIL PAGE" onclick="openModal(this)">
+            <img src="" alt="Detail Page" style="display:none;" />
+            <span class="img-slot__placeholder">DETAIL<em>이미지를 추가하세요</em></span>
+            <div class="img-slot__hover">🔍 클릭하여 확대</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="section__footer-label section__footer-label--light">WEB DESIGN PORTFOLIO</p>
+    </div>
+  </section>
+
+  <!-- ===== IMAGE MODAL ===== -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <p class="modal-label" id="modalLabel"></p>
+      <img class="modal-img" id="modalImg" src="" alt="" />
+      <p class="modal-empty" id="modalEmpty">이미지 src를 설정하면 여기에 표시됩니다.</p>
+    </div>
+  </div>
+
+  <!-- ===== SECTION 5: CONTACT (THANK YOU) ===== -->
+  <section id="contact" class="section section--contact">
+    <h2 class="contact__title">Thank You</h2>
+    <p class="contact__sub">함께 성장할 기회를 기다리겠습니다 감사합니다.</p>
+    <div class="contact__arrow">▼</div>
+    <div class="contact__qr">
+      <div class="contact__qr-placeholder">
+        <img src="./images/qr.png" alt="카카오톡 큐알" />
+      </div>
+    </div>
+  </section>
+
+  </div><!-- end slides-wrapper -->
+
+  <script>
+    const wrapper = document.getElementById('slidesWrapper');
+    const dots = document.querySelectorAll('.dot-nav__dot');
+    const dotNav = document.getElementById('dotNav');
+    const progressBar = document.getElementById('progressBar');
+    const sections = document.querySelectorAll('.section');
+    const total = sections.length;
+
+    // Dark sections (index) → use light dots
+    const darkSections = [1, 3]; // profile, project
+
+    let current = 0;
+    let isAnimating = false;
+    let wheelAccum = 0;
+    let wheelTimer = null;
+    const WHEEL_THRESHOLD = 30;
+
+    function goTo(index) {
+      if (index < 0 || index >= total) return;
+      if (index === current) return;
+      isAnimating = true;
+      current = index;
+      wrapper.style.transform = `translateY(-${current * 100}vh)`;
+
+      // Update dots
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+
+      // Light/dark dot color
+      if (darkSections.includes(current)) {
+        dotNav.classList.add('dots-light');
+      } else {
+        dotNav.classList.remove('dots-light');
+      }
+
+      // Progress bar
+      progressBar.style.width = ((current / (total - 1)) * 100) + '%';
+
+      // Nav color switching
+      const mainNav = document.getElementById('mainNav');
+      if (darkSections.includes(current)) {
+        mainNav.classList.add('nav--dark');
+      } else {
+        mainNav.classList.remove('nav--dark');
+      }
+
+      setTimeout(() => { isAnimating = false; wheelAccum = 0; }, 950);
+    }
+
+    // Wheel event — accumulate delta to handle trackpad inertia
+    window.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      if (isAnimating) return;
+
+      wheelAccum += e.deltaY;
+
+      clearTimeout(wheelTimer);
+      wheelTimer = setTimeout(() => { wheelAccum = 0; }, 200);
+
+      if (wheelAccum > WHEEL_THRESHOLD) {
+        goTo(current + 1);
+      } else if (wheelAccum < -WHEEL_THRESHOLD) {
+        goTo(current - 1);
+      }
+    }, { passive: false });
+
+    // Keyboard navigation
+    window.addEventListener('keydown', (e) => {
+      if (isAnimating) return;
+      if (e.key === 'ArrowDown' || e.key === 'PageDown') {
+        e.preventDefault();
+        goTo(current + 1);
+      } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+        e.preventDefault();
+        goTo(current - 1);
+      }
+    });
+
+    // Dot click
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        goTo(parseInt(dot.dataset.index));
+      });
+    });
+
+    // Nav links
+    document.querySelectorAll('#mainNav .nav__link').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        goTo(parseInt(link.dataset.index));
+      });
+    });
+
+    // Touch support
+    let touchStartY = 0;
+    window.addEventListener('touchstart', (e) => {
+      touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    window.addEventListener('touchend', (e) => {
+      if (isAnimating) return;
+      const delta = touchStartY - e.changedTouches[0].clientY;
+      if (Math.abs(delta) < 40) return;
+      if (delta > 0) goTo(current + 1);
+      else goTo(current - 1);
+    }, { passive: true });
+
+    // Init
+    goTo(0);
+
+    // ===== IMAGE MODAL =====
+    function openModal(slot) {
+      const img = slot.querySelector('img');
+      const label = slot.dataset.label || '';
+      const overlay = document.getElementById('modalOverlay');
+      const modalImg = document.getElementById('modalImg');
+      const modalLabel = document.getElementById('modalLabel');
+      const modalEmpty = document.getElementById('modalEmpty');
+
+      modalLabel.textContent = label;
+
+      if (img && img.src && !img.src.endsWith('#') && img.src !== window.location.href) {
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+        modalImg.style.display = 'block';
+        modalEmpty.style.display = 'none';
+      } else {
+        modalImg.style.display = 'none';
+        modalEmpty.style.display = 'block';
+      }
+
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('modalOverlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // ESC key to close modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    window.openModal = openModal;
+    window.closeModal = closeModal;
+    (function(){
+  const cvs = document.getElementById('intro-canvas-bg');
+  const ctx = cvs.getContext('2d');
+  const section = document.getElementById('intro');
+  let W = 0, H = 0, t = 0;
+
+  const img = new Image();
+  img.src = "white-geometrical-shapes-wallpaper.jpg"; // 경로 맞게 수정
+
+  function resize(){
+    const r = section.getBoundingClientRect();
+    W = cvs.width = r.width * devicePixelRatio;
+    H = cvs.height = r.height * devicePixelRatio;
+    cvs.style.width = r.width + 'px';
+    cvs.style.height = r.height + 'px';
+  }
+
+  function drawShadow(pts, alpha, blur){
+    ctx.save();
+    ctx.filter = `blur(${blur}px)`;
+    ctx.globalAlpha = alpha;
+    const g = ctx.createLinearGradient(pts[0][0],pts[0][1],pts[2][0],pts[2][1]);
+    g.addColorStop(0,'rgba(20,18,15,0)');
+    g.addColorStop(0.4,'rgba(20,18,15,1)');
+    g.addColorStop(1,'rgba(20,18,15,0)');
+    ctx.fillStyle = g;
+    ctx.beginPath();
+    ctx.moveTo(pts[0][0],pts[0][1]);
+    for(let i=1;i<pts.length;i++) ctx.lineTo(pts[i][0],pts[i][1]);
+    ctx.closePath();
+    ctx.fill();
+    ctx.restore();
+  }
+
+  function animate(){
+    t += 0.009;
+    if(!W){ resize(); requestAnimationFrame(animate); return; }
+    ctx.clearRect(0,0,W,H);
+
+    if(img.complete && img.naturalWidth){
+      const scale = Math.max(W/img.naturalWidth, H/img.naturalHeight);
+      const dw = img.naturalWidth*scale, dh = img.naturalHeight*scale;
+      ctx.drawImage(img,(W-dw)/2,(H-dh)/2,dw,dh);
+    } else {
+      ctx.fillStyle='#FDFCF8'; ctx.fillRect(0,0,W,H);
+    }
+
+    const s1=Math.sin(t),s2=Math.sin(t*.7+1.2),s3=Math.sin(t*.5+2.4),s4=Math.sin(t*.4+.8);
+    const ox1=s1*W*.12,oy1=s2*H*.1,ox2=s3*W*.1,oy2=s4*H*.12;
+
+    drawShadow([[ox1,H*.28+oy1],[W*.55+ox2,H*.05+oy2],[W*.95+ox1*.5,H*.42+oy1*.5],[W*.32+ox2*.3,H*.72+oy2*.3]],
+      0.13+0.07*Math.abs(Math.sin(t*.6)), 28/devicePixelRatio);
+    drawShadow([[W*.26+ox2,oy1],[W+ox1*.4,H*.18+oy2],[W*.92+ox2*.2,H*.65+oy1*.3],[W*.5+ox1*.3,H*.88+oy2*.2]],
+      0.11+0.08*Math.abs(Math.sin(t*.5+1)), 38/devicePixelRatio);
+    drawShadow([[ox2*.5,H*.5+oy1],[W*.45+ox1,H*.3+oy2],[W*.8+ox2*.3,H*.85+oy1*.2],[ox1*.2,H+oy2*.1]],
+      0.09+0.06*Math.abs(Math.sin(t*.4+2)), 20/devicePixelRatio);
+
+    requestAnimationFrame(animate);
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+  animate();
+})();
+  </script>
+
 </body>
 </html>
