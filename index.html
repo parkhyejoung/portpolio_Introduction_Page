@@ -305,20 +305,10 @@
           </div>
         </div>
       </div>
-      
+
       <p class="section__footer-label section__footer-label--light">WEB DESIGN PORTFOLIO</p>
     </div>
   </section>
-
-  <!-- ===== IMAGE MODAL ===== -->
-  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
-    <div class="modal-box" onclick="event.stopPropagation()">
-      <button class="modal-close" onclick="closeModal()">✕</button>
-      <p class="modal-label" id="modalLabel"></p>
-      <img class="modal-img" id="modalImg" src="" alt="" />
-      <p class="modal-empty" id="modalEmpty">이미지 src를 설정하면 여기에 표시됩니다.</p>
-    </div>
-  </div>
 
   <!-- ===== SECTION 5: CONTACT (THANK YOU) ===== -->
   <section id="contact" class="section section--contact">
@@ -333,6 +323,15 @@
   </section>
 
   </div><!-- end slides-wrapper -->
+  <!-- ===== IMAGE MODAL ===== -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+      <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <p class="modal-label" id="modalLabel"></p>
+        <img class="modal-img" id="modalImg" src="" alt="" />
+        <p class="modal-empty" id="modalEmpty">이미지 src를 설정하면 여기에 표시됩니다.</p>
+      </div>
+  </div>
 
   <script>
     const wrapper = document.getElementById('slidesWrapper');
@@ -343,13 +342,15 @@
     const total = sections.length;
 
     // Dark sections (index) → use light dots
-    const darkSections = [1, 3]; // profile, project
+const darkSections = [1, 3]; // profile, project
 
     let current = 0;
     let isAnimating = false;
     let wheelAccum = 0;
     let wheelTimer = null;
     const WHEEL_THRESHOLD = 30;
+
+    let isModalOpen = false;
 
     function goTo(index) {
       if (index < 0 || index >= total) return;
@@ -384,7 +385,11 @@
 
     // Wheel event — accumulate delta to handle trackpad inertia
     window.addEventListener('wheel', (e) => {
+
+      if (isModalOpen) return;
+
       e.preventDefault();
+
       if (isAnimating) return;
 
       wheelAccum += e.deltaY;
@@ -466,13 +471,14 @@
 
       overlay.classList.add('active');
       document.body.style.overflow = 'hidden';
+      isModalOpen = true;
     }
 
     function closeModal() {
       document.getElementById('modalOverlay').classList.remove('active');
       document.body.style.overflow = '';
+      isModalOpen = false;
     }
-
     // ESC key to close modal
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeModal();
