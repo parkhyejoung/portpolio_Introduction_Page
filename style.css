@@ -61,8 +61,8 @@ body {
 /* 추가 */
 .section--intro .intro__content,
 .section--intro .intro__badge {
-  /* position: relative; */
-  z-index: 1;
+  /* position: relative;
+  z-index: 1; */
 }
 /* 배경 영상이 전체 화면을 꽉 채우도록 */
 .intro__bg-video {
@@ -78,7 +78,7 @@ body {
 /* 텍스트와 배지를 영상 위에 표시 */
 .section--intro .intro__content,
 .section--intro .intro__badge {
-  position: relative;
+  /* position: relative; */
   z-index: 1;
 }
 
@@ -138,20 +138,20 @@ body {
 }
 
 .intro__badge {
-  position: absolute;
+  /* position: absolute;
   bottom: 36px;
   right: 52px;
   background: var(--dark);
   color: var(--white);
-  padding: 14px 26px 14px 46px;
+  padding: 14px 26px 14px 46px; */
   text-align: center;
-  font-size: 0.8rem;
+  /* font-size: 0.8rem;
   font-weight: 500;
   line-height: 1.9;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.04em; */
 }
 
-.intro__badge::before{
+/* .intro__badge::before{
   content:'';
   display:block;
   overflow:hidden;
@@ -163,7 +163,7 @@ body {
   top:-10px;
   right:212px;
   background-color:#FDFCF8;
-}
+} */
 
 /* =========================================
   SECTION 2: PROFILE
